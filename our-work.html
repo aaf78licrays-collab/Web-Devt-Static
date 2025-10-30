@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WILD AFRICA - Our Work</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🦁 WILD AFRICA</h1>
+                </div>
+                <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html">Home / About Us</a></li>
+                        <li><a href="our-work.html" class="active">Our Work</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="faq.html" class="active">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Our Conservation Work</h2>
+            <p>Making a difference across Africa</p>
+            <a href="#gallery" class="btn">Explore Our Projects</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Conservation in Action</h2>
+            <div class="gallery-carousel">
+                <div class="carousel-container" id="carousel">
+                    <div class="carousel-slide">
+                         <img src="./images/elephants1.jpg" max-width = 100%;  height= auto; display="block" alt="African Lions" />
+                        <div class="carousel-caption">
+                            <h3>Elephant Conservation</h3>
+                            <p>Protecting Africa's majestic elephants through anti-poaching efforts and habitat preservation</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                         <img src="./images/rhino.jpg" max-width = 100%;  height= auto; display="block" alt="African Lions" />
+                        <div class="carousel-caption">
+                            <h3>Rhino Protection Program</h3>
+                            <p>24/7 monitoring and protection of critically endangered rhino populations</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                         <img src="./images/marine.jpg" max-width = 100%;  height= auto; display="block" alt="African Lions" />
+                        <div class="carousel-caption">
+                            <h3>Marine Conservation</h3>
+                            <p>Safeguarding coastal ecosystems and marine life along African shores</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                         <img src="./images/habitat.jpg" max-width = 100%;  height= auto; display="block" alt="African Lions" />
+                        <div class="carousel-caption">
+                        <h3>Community Engagement</h3>
+                            <p>Empowering local communities to become conservation stewards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-btn" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(0)"></span>
+                    <span class="indicator" onclick="goToSlide(1)"></span>
+                    <span class="indicator" onclick="goToSlide(2)"></span>
+                    <span class="indicator" onclick="goToSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">What We Care About</h2>
+            <div class="care-grid">
+                <div class="care-item">
+                    <div class="care-icon">👨‍👩‍👧‍👦</div>
+                    <h3>People</h3>
+                    <p>We work with indigenous communities and local populations to create sustainable livelihoods that coexist harmoniously with wildlife. Our programs provide education, employment, and resources that reduce human-wildlife conflict.</p>
+                </div>
+                <div class="care-item">
+                    <div class="care-icon">🗺️</div>
+                    <h3>Places</h3>
+                    <p>From the Serengeti plains to the Congo rainforests, we protect critical habitats and ecosystems. We establish and manage protected areas, wildlife corridors, and conservation zones across 15 African nations.</p>
+                </div>
+                <div class="care-item">
+                    <div class="care-icon">🦒</div>
+                    <h3>Species</h3>
+                    <p>Our species recovery programs focus on endangered animals including elephants, rhinos, lions, giraffes, gorillas, and countless other species. We combine breeding programs, habitat restoration, and anti-poaching measures.</p>
+                </div>
+                <div class="care-item">
+                    <div class="care-icon">🌡️</div>
+                    <h3>Climate</h3>
+                    <p>We address climate change impacts through ecosystem restoration, carbon sequestration projects, and climate adaptation strategies. Our work helps both wildlife and communities build resilience to changing conditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section work-method-section">
+        <div class="container">
+            <h2 class="section-title">How We Work</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 3rem; font-size: 1.1rem; color: #555;">Our multifaceted approach combines various disciplines and strategies to achieve lasting conservation impact across Africa.</p>
+            
+            <div class="method-grid">
+                <div class="method-card">
+                    <h3>Public Policy</h3>
+                    <p>We advocate for stronger wildlife protection laws and sustainable development policies. Our policy team works with governments to draft legislation, establish protected areas, and enforce anti-poaching regulations.</p>
+                    <p style="margin-top: 1rem;">Recent achievements include helping pass stricter ivory trade bans in 8 countries and establishing 3 new national parks totaling over 2 million hectares.</p>
+                </div>
+                <div class="method-card">
+                    <h3>Science & Research</h3>
+                    <p>Our research programs provide critical data that informs conservation strategies. We conduct population surveys, genetic studies, migration tracking, and ecosystem health assessments.</p>
+                    <p style="margin-top: 1rem;">Our scientists publish peer-reviewed research and collaborate with universities worldwide to advance conservation science and develop innovative solutions.</p>
+                </div>
+                <div class="method-card">
+                    <h3>Business Partnerships</h3>
+                    <p>We partner with responsible businesses to promote sustainable practices and eco-tourism. These partnerships generate revenue for conservation while creating economic opportunities for local communities.</p>
+                    <p style="margin-top: 1rem;">Our eco-tourism initiatives have generated over $15 million annually, directly funding conservation programs and community development.</p>
+                </div>
+                <div class="method-card">
+                    <h3>Wildlife Conservation</h3>
+                    <p>Direct action in the field is at the heart of our work. We deploy ranger units, operate wildlife rescue centers, implement breeding programs, and conduct habitat restoration projects.</p>
+                    <p style="margin-top: 1rem;">Our field teams have rescued over 2,500 animals, trained 450 rangers, and restored more than 100,000 hectares of degraded habitat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: #e8f5e9;">
+        <div class="container">
+            <h2 class="section-title">Our Impact</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>🐘 45,000+</h3>
+                    <p>Animals protected through our conservation programs across Africa</p>
+                </div>
+                <div class="card">
+                    <h3>🌳 2.5M Hectares</h3>
+                    <p>Protected land under our management and conservation partnerships</p>
+                </div>
+                <div class="card">
+                    <h3>👥 500+ Communities</h3>
+                    <p>Local communities engaged in our conservation and development programs</p>
+                </div>
+                <div class="card">
+                    <h3>📚 150,000+</h3>
+                    <p>Students reached through our environmental education initiatives</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WILD AFRICA</h3>
+                    <p>Protecting Africa's wildlife and wild places for future generations through conservation, community engagement, and sustainable practices.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home / About Us</a></li>
+                        <li><a href="our-work.html">Our Work</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: info@wildafrica.org</li>
+                        <li>Phone: +256 20 123 4567</li>
+                        <li>Kampala, Uganda</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WILD AFRICA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const indicators = document.querySelectorAll('.indicator');
+
+        function showSlide(n) {
+            if (n >= slides.length) currentSlide = 0;
+            if (n < 0) currentSlide = slides.length - 1;
+            
+            const carousel = document.getElementById('carousel');
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+
+        function goToSlide(n) {
+            currentSlide = n;
+            showSlide(currentSlide);
+        }
+        
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>
+

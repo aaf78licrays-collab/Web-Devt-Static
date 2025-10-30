@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WILD AFRICA - Home & About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🦁 WILD AFRICA</h1>
+                </div>
+                <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home / About Us</a></li>
+                        <li><a href="our-work.html">Our Work</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="faq.html" class="active">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-carousel">
+        <div class="gallery-carousel">
+            <div class="carousel-container" id="homeCarousel">
+                    <div class="carousel-slide">
+                         <img src="./images/africanlion.jpg" max-width = 100%;  height= auto; display="block" alt="African Lions" />
+             <div class="carousel-caption">
+                            <h3>African Lions</h3>
+                            <p>Protecting the King of the Savanna through habitat preservation and anti-poaching initiatives</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./images/elephants.jpg" max-width = 100%;  height= auto; display="block" alt="African Lions" />
+                        <div class="carousel-caption">
+                            <h3>Majestic Elephants</h3>
+                            <p>Safeguarding elephant populations and their migration corridors across Africa</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                       <img src="./images/rhino1.jpg" max-width = 100%;  height= auto; display="block" alt="African Lions" />
+                        <div class="carousel-caption">
+                            <h3>Rhino Conservation</h3>
+                            <p>24/7 protection for critically endangered black and white rhino populations</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./images/gorillababy.jpg" max-width = 100%;  height= auto; display="block" alt="African Lions" />
+                        <div class="carousel-caption">
+                            <h3>Mountain Gorillas</h3>
+                            <p>Preserving rainforest habitats for endangered mountain gorilla families</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./images/giraffe.jpg" max-width = 100%;  height= auto; display="block" alt="African Lions" />
+                        <div class="carousel-caption">
+                            <h3>Giraffe Conservation</h3>
+                            <p>Monitoring and protecting Africa's iconic giraffe populations across the continent</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" onclick="homePrevSlide()">&#10094;</button>
+                    <button class="carousel-btn" onclick="homeNextSlide()">&#10095;</button>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="homeGoToSlide(0)"></span>
+                    <span class="indicator" onclick="homeGoToSlide(1)"></span>
+                    <span class="indicator" onclick="homeGoToSlide(2)"></span>
+                    <span class="indicator" onclick="homeGoToSlide(3)"></span>
+                    <span class="indicator" onclick="homeGoToSlide(4)"></span>
+                </div>
+            </div>
+        </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Our History</h3>
+                    <p>Founded in 1985, WILD AFRICA emerged from a passionate vision to protect Africa's endangered species and pristine ecosystems. For nearly four decades, we've been at the forefront of wildlife conservation, working alongside local communities to create sustainable solutions that benefit both nature and people.</p>
+                </div>
+                <div class="card">
+                    <h3>Our Background</h3>
+                    <p>What began as a small group of conservationists in Kenya has grown into a continental force for change. We've expanded our reach across 15 African nations, establishing protected reserves, anti-poaching units, and educational programs that have helped save countless species from extinction.</p>
+                </div>
+                <div class="card">
+                    <h3>Our Mission</h3>
+                    <p>We are dedicated to conserving Africa's most vulnerable wildlife and wild places. Through science-based approaches, community partnerships, and innovative conservation strategies, we work tirelessly to ensure that Africa's natural heritage thrives for generations to come.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Conservation</h3>
+                    <p>We prioritize the protection of endangered species and their habitats through evidence-based conservation practices.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Community</h3>
+                    <p>We believe in empowering local communities as essential partners in wildlife conservation and sustainable development.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Integrity</h3>
+                    <p>We operate with transparency, accountability, and ethical practices in all our conservation efforts and partnerships.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Innovation</h3>
+                    <p>We embrace cutting-edge technology and creative solutions to address complex conservation challenges.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Collaboration</h3>
+                    <p>We foster partnerships across governments, organizations, and communities to amplify our conservation impact.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Sustainability</h3>
+                    <p>We promote long-term solutions that balance ecological health with human needs and economic development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section careers-section">
+        <div class="container">
+            <h2 class="section-title">Careers at WILD AFRICA</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem; color: #555;">Join our team of dedicated professionals working to protect Africa's incredible wildlife. We're always looking for passionate individuals who share our commitment to conservation.</p>
+            
+            <h3 style="color: #2d5016; font-size: 1.8rem; margin-bottom: 1.5rem; text-align: center;">Current Openings</h3>
+            <div class="job-list">
+                <div class="job-item">
+                    <h4>Wildlife Conservation Officer</h4>
+                    <p>Lead field operations in elephant conservation programs across Tanzania and Kenya.</p>
+                    <span class="job-type">Full-Time</span>
+                </div>
+                <div class="job-item">
+                    <h4>Research Scientist - Marine Biology</h4>
+                    <p>Conduct research on coastal ecosystems and marine species protection along East African shores.</p>
+                    <span class="job-type">Full-Time</span>
+                </div>
+                <div class="job-item">
+                    <h4>Community Outreach Coordinator</h4>
+                    <p>Develop and implement community education programs in rural conservation areas.</p>
+                    <span class="job-type">Full-Time</span>
+                </div>
+                <div class="job-item">
+                    <h4>GIS & Data Analyst</h4>
+                    <p>Manage geographic information systems for tracking wildlife populations and habitat changes.</p>
+                    <span class="job-type">Full-Time</span>
+                </div>
+                <div class="job-item">
+                    <h4>Veterinary Technician</h4>
+                    <p>Provide medical care for injured and rescued wildlife at our rehabilitation centers.</p>
+                    <span class="job-type">Contract</span>
+                </div>
+                <div class="job-item">
+                    <h4>Communications Manager</h4>
+                    <p>Lead our storytelling efforts to raise awareness about African wildlife conservation globally.</p>
+                    <span class="job-type">Full-Time</span>
+                </div>
+            </div>
+
+            <h3 style="color: #2d5016; font-size: 1.8rem; margin: 3rem 0 1.5rem; text-align: center;">Internship Opportunities</h3>
+            <div class="job-list">
+                <div class="job-item">
+                    <h4>Conservation Research Intern</h4>
+                    <p>Assist with field research projects studying big cat populations in Serengeti ecosystem.</p>
+                    <span class="job-type" style="background-color: #1b5e20;">Internship - 6 months</span>
+                </div>
+                <div class="job-item">
+                    <h4>Environmental Education Intern</h4>
+                    <p>Support educational workshops and school programs in communities near protected areas.</p>
+                    <span class="job-type" style="background-color: #1b5e20;">Internship - 3-6 months</span>
+                </div>
+                <div class="job-item">
+                    <h4>Digital Marketing Intern</h4>
+                    <p>Help manage social media campaigns and digital content creation for conservation awareness.</p>
+                    <span class="job-type" style="background-color: #1b5e20;">Internship - 3 months</span>
+                </div>
+                <div class="job-item">
+                    <h4>Wildlife Photography Intern</h4>
+                    <p>Document conservation projects and wildlife across our field sites for educational materials.</p>
+                    <span class="job-type" style="background-color: #1b5e20;">Internship - 4 months</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section experts-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Experts</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem; color: #555;">Our team of world-renowned specialists brings decades of expertise in wildlife conservation, environmental science, and sustainable development.</p>
+            
+            <div class="experts-grid">
+                <div class="expert-card">
+                    <div class="expert-icon">🌍</div>
+                    <h3>Climate Experts</h3>
+                    <p>Specialists analyzing climate change impacts on African ecosystems and developing adaptation strategies for wildlife populations.</p>
+                </div>
+                <div class="expert-card">
+                    <div class="expert-icon">👥</div>
+                    <h3>Community Specialists</h3>
+                    <p>Dedicated professionals working with local communities to create sustainable livelihoods while protecting wildlife.</p>
+                </div>
+                <div class="expert-card">
+                    <div class="expert-icon">🌳</div>
+                    <h3>Forest Conservationists</h3>
+                    <p>Experts in forest ecosystem management, reforestation programs, and protecting critical habitats for endangered species.</p>
+                </div>
+                <div class="expert-card">
+                    <div class="expert-icon">💧</div>
+                    <h3>Freshwater Scientists</h3>
+                    <p>Researchers focused on protecting Africa's rivers, lakes, and wetlands that sustain both wildlife and human communities.</p>
+                </div>
+                <div class="expert-card">
+                    <div class="expert-icon">🔬</div>
+                    <h3>Research Scientists</h3>
+                    <p>Leading researchers conducting cutting-edge studies on wildlife behavior, genetics, and population dynamics.</p>
+                </div>
+                <div class="expert-card">
+                    <div class="expert-icon">🦏</div>
+                    <h3>Wildlife Biologists</h3>
+                    <p>Field biologists monitoring endangered species, conducting population surveys, and implementing recovery programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WILD AFRICA</h3>
+                    <p>Protecting Africa's wildlife and wild places for future generations through conservation, community engagement, and sustainable practices.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home / About Us</a></li>
+                        <li><a href="our-work.html">Our Work</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: info@wildafrica.org</li>
+                        <li>Phone: +254 20 123 4567</li>
+                        <li>Nairobi, Kenya</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WILD AFRICA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+
+        let homeCurrentSlide = 0;
+        const homeSlides = document.querySelectorAll('#homeCarousel .carousel-slide');
+        const homeIndicators = document.querySelectorAll('#homeCarousel + .carousel-controls + .carousel-indicators .indicator');
+
+        function homeShowSlide(n) {
+            if (n >= homeSlides.length) homeCurrentSlide = 0;
+            if (n < 0) homeCurrentSlide = homeSlides.length - 1;
+            
+            const carousel = document.getElementById('homeCarousel');
+            carousel.style.transform = `translateX(-${homeCurrentSlide * 100}%)`;
+            
+            homeIndicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === homeCurrentSlide);
+            });
+        }
+
+        function homeNextSlide() {
+            homeCurrentSlide++;
+            homeShowSlide(homeCurrentSlide);
+        }
+
+        function homePrevSlide() {
+            homeCurrentSlide--;
+            homeShowSlide(homeCurrentSlide);
+        }
+
+        function homeGoToSlide(n) {
+            homeCurrentSlide = n;
+            homeShowSlide(homeCurrentSlide);
+        }
+
+        setInterval(homeNextSlide, 5000);
+    </script>
+</body>
+</html>
+
