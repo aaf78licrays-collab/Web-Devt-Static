@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 15;
     box-sizing: border-box;
 }
 
@@ -896,4 +896,5 @@ footer {
         font-size: 1rem;
     }
 }
+
 
