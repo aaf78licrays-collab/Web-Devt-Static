@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WILD AFRICA - Frequently Asked Questions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    #inquiryForm {
+            display: none; /* Hide form initially */
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            width: 300px;
+        }
+        input, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4bd700;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #dce6da;
+        }
+
+         
+    /* Header Section */
+        .header-section {
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
+            color: #ffffff;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .header-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .header-section p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 1rem;
+        }
+
+        .container {
+            max-width: 56rem;
+            margin: 0 auto;
+        }
+
+        /* Accordion Styles */
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .accordion-item {
+            background-color: #ffffff;
+            border: 2px solid #e5e5e5;
+            border-radius: 0.5rem;
+            padding: 0 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion-item:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion-item.active {
+            border-color: #2d5016;
+        }
+
+        .accordion-trigger {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.5rem 0;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-align: left;
+            color: #1a1a1a;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        .accordion-trigger:hover {
+            color: #2d5016;
+        }
+
+        .accordion-icon {
+            width: 1rem;
+            height: 1rem;
+            transition: transform 0.2s ease;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: #666666;
+            line-height: 1.75;
+        }
+
+        .accordion-content-inner {
+            padding-bottom: 1.5rem;
+            padding-top: 0.5rem;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 1000px;
+        }
+
+        /* Help Section */
+        .help-section {
+            margin-top: 3rem;
+            background-color: #f5f5f4;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .help-section h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .help-section p {
+            color: #666666;
+            margin-bottom: 1.5rem;
+            max-width: 42rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2d5016;
+            color: #ffffff;
+            padding: 0.75rem 2rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #3d6820;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-section h1 {
+                font-size: 2rem;
+            }
+
+            .header-section p {
+                font-size: 1rem;
+            }
+
+            .accordion-trigger {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+     <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🦁 WILD AFRICA</h1>
+                </div>
+                <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="our-work.html" class="active">Our Work</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href ="faq-standalone.html">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    <div class="container">
+            <h2><center>Frequently Asked Questions</center></h2>
+            <p>Find answers to common questions about wildlife conservation, ethical wildlife viewing, and how you can make a difference in protecting our planet's precious species.</p>
+        </div>
+    
+</header>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="accordion">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span>How can I responsibly view wildlife in its natural habitat?</span>
+                        <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            Responsible wildlife viewing is crucial for animal welfare and conservation. Always maintain a safe distance from animals - use binoculars or telephoto lenses for closer views. Never feed wildlife as this disrupts their natural behavior and diet, and can make them dependent on humans. Minimize noise and sudden movements to avoid stressing animals. Always stay on marked paths and trails to protect sensitive habitats and avoid disturbing nesting or breeding areas. Follow all park regulations and guidelines, and consider hiring local, certified guides who understand animal behavior and conservation principles. Remember, observing wildlife should never come at the expense of their wellbeing.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span>What is the biggest threat to global wildlife populations today?</span>
+                        <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            Habitat loss is the single biggest threat to global wildlife populations. As human populations expand, forests are cleared for agriculture, urban development, and infrastructure, leaving animals with fragmented and diminished living spaces. Climate change compounds this issue by altering ecosystems faster than many species can adapt, changing migration patterns, food availability, and breeding cycles. Rising temperatures, changing precipitation patterns, and extreme weather events are forcing species to relocate or face extinction. Additionally, deforestation, pollution, and ocean acidification are destroying critical habitats worldwide. These interconnected threats require urgent global action to prevent mass extinctions.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span>How can I donate or volunteer for your conservation efforts?</span>
+                        <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            We offer multiple ways for you to support wildlife conservation. For donations, visit our Donation Page where you can make one-time or recurring contributions. Every donation directly funds anti-poaching patrols, habitat restoration, veterinary care, and community education programs. We accept various payment methods and provide tax receipts for all donations. For volunteering opportunities, please visit our Volunteer Application page. We offer both field-based positions (animal care, research, habitat restoration) and remote opportunities (data analysis, fundraising, social media). Volunteer programs range from a few weeks to several months, and we carefully match volunteers with projects based on their skills and interests.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span>Are there specific species that are currently most vulnerable?</span>
+                        <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            Several species face critical endangerment. African Rhinos, particularly the Black and Northern White Rhino, are severely threatened by poaching for their horns, which are illegally sold on black markets. Despite intensive protection efforts, rhino populations remain dangerously low. Orangutans in Southeast Asia face habitat destruction from palm oil plantations and logging. These intelligent great apes have lost over 80% of their natural habitat in the past 20 years. Other critically endangered species include the Amur Leopard, Sumatran Elephant, Hawksbill Turtle, and Mountain Gorilla. Each species faces unique challenges including poaching, habitat loss, human-wildlife conflict, and climate change. Conservation efforts focus on habitat protection, anti-poaching measures, breeding programs, and community engagement.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span>What is ethical wildlife photography?</span>
+                        <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            Ethical wildlife photography prioritizes animal welfare over getting the perfect shot. Use telephoto lenses (300mm or longer) to photograph animals from a safe distance without disturbing them or encroaching on their space. Never use bait, calls, or other methods to lure animals for photos, as this disrupts natural behavior and can put them at risk. Avoid flash photography, which can startle animals, damage their night vision, or reveal their location to predators. Never alter the environment by moving vegetation, nests, or other habitat features. Respect breeding and nesting seasons by keeping extra distance. Be patient and allow animals to behave naturally - forced interactions create stress. Share your photos responsibly, avoiding location details that could lead to harassment of animals or sensitive sites. Remember, the wellbeing of the animal always comes before the photograph.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Help Section -->
+            <div class="help-section">
+                <h3>Still Have Questions?</h3>
+                <p>Can't find the answer you're looking for? Our team is here to help. Reach out to us and we'll get back to you as soon as possible.</p>
+                <button id="inquiryBtn">Make an Inquiry</button>
+            </div>
+        </div>
+ 
+
+    <!-- Hidden Form -->
+    <div id="inquiryForm">
+        <h3>Inquiry Form</h3>
+        <form id="form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Inquiry" required></textarea>
+            <button id="submitBtn" type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    </section>
+
+    <script>
+
+        // Show form when button is clicked
+        document.getElementById('inquiryBtn').addEventListener('click', function() {
+            document.getElementById('inquiryForm').style.display = 'block';
+        });
+
+        // Handle form submission
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent page reload
+            alert('Inquiry submitted successfully!');
+            form.style.display = 'none';
+            
+        const box = document.getElementById('box');
+        });
+
+        // Vanilla JavaScript Accordion Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            accordionItems.forEach(item => {
+                const trigger = item.querySelector('.accordion-trigger');
+                
+                trigger.addEventListener('click', function() {
+                    // Check if this item is already active
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all accordion items
+                    accordionItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                    });
+                    
+                    // If it wasn't active, open it
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WILD AFRICA</h3>
+                    <p>Protecting Africa's wildlife and wild places for future generations through conservation, community engagement, and sustainable practices.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="our-work.html">Our Work</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href ="faq-standalone.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: info@wildafrica.org</li>
+                        <li>Phone: +256 20 123 4567</li>
+                        <li>Kampala, Uganda</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WILD AFRICA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
